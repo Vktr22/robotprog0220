@@ -24,8 +24,10 @@ class Robot():
 
     def fordula(self):
         #mind2 motor azonos sebességgel megy - drivebase kell - turn fordulásra
+
+        self.robot.turn(360)
         
-        self.robot.settings(2000, 100)   # Állítsuk be a robot sebességét és gyorsítását
+        """self.robot.settings(2000, 100)   # Állítsuk be a robot sebességét és gyorsítását
         self.robot.turn(90)      # Fordítsuk jobbra a robotot
         time.sleep(3)          # Várjunk egy ideig, majd állítsuk le a robotot
         self.robot.stop()
@@ -35,6 +37,7 @@ class Robot():
         self.robot.turn(-90)     # Fordítsuk balra a robotot
         time.sleep(3)          # Várjunk egy ideig, majd állítsuk le a robotot
         self.robot.stop()
+        """
         self.ev3.speaker.beep()
 
     def fordulb(self):
